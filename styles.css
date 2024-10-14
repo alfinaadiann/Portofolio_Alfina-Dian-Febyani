@@ -1,0 +1,276 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #fb9ebb;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    background-color: #ffe6ee;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+section:nth-of-type(even) {
+    background-color: #ffe6ee;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff83aa;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #555;
+    margin: 10px 0 5px 0;
+}
+
+/* Introduction */
+.introduction-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.introduction-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.introduction-image {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.introduction-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Education & Experience */
+.education-item,
+.experience-item,
+.project-item {
+    margin-bottom: 20px;
+}
+
+.education-item span {
+    display: block;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-list,
+.certificates-list,
+.contact-info {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li,
+.certificates-list li,
+.contact-info li {
+    background-color: #ff83aa;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li {
+    /* Specific styles for skills if needed */
+}
+
+.certificates-list li {
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff83aa;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.certificates-list li img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.certificates-list li span {
+    font-weight: bold;
+}
+
+/* Work Experience Images */
+.experience-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.experience-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Project Portfolio */
+.project-subitem {
+    margin-bottom: 20px;
+}
+
+.project-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #fedcdb;
+    color: #ff83aa;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .introduction-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .introduction-image {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .skills-list,
+    .certificates-list,
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list li,
+    .certificates-list li,
+    .contact-info li {
+        width: 80%;
+        text-align: center;
+    }
+
+    .experience-images,
+    .project-images {
+        justify-content: center;
+    }
+}
+
+/* Hover pada Gambar */
+.project-images img:hover,
+.experience-images img:hover,
+.introduction-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
